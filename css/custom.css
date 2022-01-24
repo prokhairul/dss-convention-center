@@ -5,12 +5,13 @@
     border-radius: 25px;
     margin-top: -30px;
     margin-bottom: 20px;
-    color: white;
+    color: #ffffff;
 }
 .bg-custom-card .btn{
     background-color: whitesmoke;
-    color: blue;
+    color: #0061A8;
     border: 1px solid whitesmoke;
+    font-weight: bold;
 }
 .bg-custom-card .btn:hover{
     background-color: #164e63;
@@ -91,6 +92,7 @@
     background-color: #2e6d69;
     border: 1px solid #2e6d69;
     color: white;
+    font-weight: bold;
 }
 .custom-btn .btn:hover{
     background-color: #164e63;
@@ -101,7 +103,7 @@
 .custom-btn-slider .btn{
     background-color: #ffffff;
     border: 1px solid #ffffff;
-    color: #1900ff;
+    color: #0061A8;
 }
 .custom-btn-slider .btn:hover{
     background-color: #2e6d69;
