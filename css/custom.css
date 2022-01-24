@@ -1,14 +1,51 @@
+
 /* Cards and Slider Custom Design  */
 .bg-custom-card{
 
-    background-color: #fcd34d;
+    background-color: #2e6d69;
     border-radius: 25px;
     margin-top: -30px;
     margin-bottom: 20px;
+    color: white;
+}
+
+.bg-custom-card .btn{
+
+    background-color: whitesmoke;
+    color: blue;
+    border: 1px solid whitesmoke;
+}
+
+.bg-custom-card .btn:hover{
+    background-color: #164e63;
+    border: 1px solid #577d8a;
+    color: white;
+    transition: 0.5s;
 }
 
 .package-bottom{
-    margin-bottom: 70px;
+    margin-bottom: 100px;
+}
+
+/* Few Changes  */
+
+.navbar-light .navbar-brand {
+    font-family: 'Righteous', cursive;
+    letter-spacing: 3px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Varela Round', sans-serif;   
+}
+
+.accordion-button:not(.collapsed) {
+    color: #ffffff;
+    background-color: #2e6d69;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background:none
 }
 
 
@@ -47,6 +84,19 @@
         width: 100%;
     }
 
+    .navbar-light .navbar-brand {
+        font-family: 'Righteous', cursive;
+        letter-spacing: 0px;
+    }
+
+    .copyright-text{
+        flex-direction: column;
+    }
+
+    .package-bottom{
+        margin-bottom: 0px;
+    }
+
  }
 
 /* Custom Button Design  */
@@ -75,5 +125,12 @@
     transition: 0.5s;
 }
 
+/* Badge Design fix */
 
-/* Plan Hover Effect Design */
+.badge-design{
+    margin-left: -35px;
+    padding: 10px;
+}
+
+
+
