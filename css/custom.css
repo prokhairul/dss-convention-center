@@ -27,7 +27,7 @@
     margin-bottom: 100px;
 }
 
-/* Few Changes  */
+/* Few Navbar Changes  */
 
 .navbar-light .navbar-brand {
     font-family: 'Righteous', cursive;
@@ -37,6 +37,11 @@
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Varela Round', sans-serif;   
 }
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #2e6d69;
+}
+
+/* Accordion Changes  */
 
 .accordion-button:not(.collapsed) {
     color: #ffffff;
@@ -48,6 +53,7 @@
     background:none
 }
 
+/* Responsive changes  */
 
 @media (max-width: 767.98px){
 
@@ -65,6 +71,13 @@
           height: 450px;
           width: 100%;
       }
+ }
+
+ @media (max-width: 991px){
+    .bg-custom-card{
+        margin-top: 20px;
+      }
+
  }
 
 
@@ -99,6 +112,8 @@
 
  }
 
+ 
+
 /* Custom Button Design  */
 .custom-btn .btn{
     background-color: #2e6d69;
@@ -130,6 +145,8 @@
 .badge-design{
     margin-left: -35px;
     padding: 10px;
+    color: white;
+    background-color: #f97316;
 }
 
 
