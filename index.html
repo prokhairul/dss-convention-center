@@ -12,6 +12,7 @@
     <!-- Fontawesome Icon CSS -->
     <script src="https://kit.fontawesome.com/e537515c48.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/custom.css">
+    <!-- google Fonts Link  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Varela+Round&display=swap" rel="stylesheet">
@@ -20,7 +21,7 @@
 <body>
     <!-- Head Part  -->
     <header>
-        <!-- Navbar design  -->
+        <!-- Navbar Section  -->
         <section class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-white  ">
                 <div class="container-fluid d-flex">
@@ -49,8 +50,7 @@
                 </div>
             </nav>
         </section>
-
-        <!-- Main Carousel Design  -->
+        <!-- Carousel Section  -->
         <section class="container-fluid">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators ">
@@ -112,11 +112,27 @@
                 </button>
             </div>
         </section>
-
     </header>
 
-    <!-- Main Content Section Start  -->
+    <!-- Main Part  -->
     <main>
+        <!-- Toast Section  -->
+        <section class="container">
+            <div class="d-flex justify-content-end">
+                <div class="mt-3 position-absolute">
+                    <div class="toast align-items-center text-white bg-primary border-0" role="alert"
+                        aria-live="assertive" aria-atomic="true">
+                        <div class="d-flex">
+                            <div class="toast-body">
+                                Hello, Welcome to DSS Convention Center
+                            </div>
+                            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                                aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Event Plan Section  -->
         <section class="container pt-4">
             <h2 class="text-center my-5">Plan Your Event</h2>
@@ -220,8 +236,7 @@
                     <div class=" rounded-3 p-4">
                         <h3>$2500</h3>
                         <h4>Corporate Plus</h4>
-                        <p>Event patrons gets special discounted room rate & room will get 40% discount on
-                            restaurant</p>
+                        <p>discounted room rate & room will get 40% discount on restaurant</p>
                         <p> <i class="fas fa-check"></i> Limited space access</p>
                         <p> <i class="fas fa-check"></i> Security facility</p>
                         <p> <i class="fas fa-check"></i> Event support</p>
@@ -329,16 +344,28 @@
     </main>
 
     <!-- Footer Section  -->
-
     <footer class="d-flex copyright-text justify-content-around align-items-center bg-dark py-5 px-3">
         <div>
             <p class="text-white">&copy;2022 DSS. All right Reserved. </p>
         </div>
         <div class="py-4 ">
-            <img class="mb-2" src="images/icons/app-store.png" alt=""> <br>
-            <img src="images/icons/google-play.png" alt="">
+            <h3 class="text-white mb-3 text-center">Get The App</h3>
+            <a href="https://apps.apple.com/us/app/merged/id1055672607" target="_blank"><img class="mb-2"
+                    src="images/icons/app-store.png" alt="App Store"></a> <br>
+            <a href="https://play.google.com/store/apps/details?id=learn.programming.courses&hl=en_US&gl=US"
+                target="_blank"><img src="images/icons/google-play.png" alt="Play Store"></a>
         </div>
     </footer>
+
+    <!-- Script For Toast  -->
+    <script>
+        window.onload = (event) => {
+            let myAlert = document.querySelector('.toast');
+            let bsAlert = new bootstrap.Toast(myAlert)
+            bsAlert.show();
+        }
+    </script>
+    <!-- Bootstrap Js  -->
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
